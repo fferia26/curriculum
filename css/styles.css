@@ -1,0 +1,342 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #f6f8ff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.container {
+  width: 90%;
+  max-width: 1140px;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  background: url("../img/Datacenter.jpg") #1b2127;
+  background-size: cover;
+  background-position: center center;
+  max-height: 600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Contenedor de Logo y Nav */
+.container-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  margin: 20px;
+}
+
+header .menu {
+  margin: 40px 0;
+}
+
+header .menu a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding: 10px;
+  margin: auto;
+  border: 1px solid transparent;
+}
+
+header .menu a:hover {
+  background-color: #0267c1;
+}
+
+/* Contenedor del Autor y profesión*/
+.container-text {
+  margin-top: 90px;
+  margin-bottom: 90px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Contenedor imagen del perfil */
+.container-text .wrap {
+  width: 150px;
+  height: 150px;
+  border: 1px solid transparent;
+  border-radius: 75px;
+}
+
+/* Heredmos las propiedades del contenedor padre */
+.container-text .wrap img {
+  width: inherit;
+  height: inherit;
+  border: inherit;
+  border-radius: inherit;
+}
+
+/* Nombre del Autor y Descripción */
+.container-text .author {
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.container-text .author-description {
+  margin-top: -15px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1em;
+}
+
+/* Contenedor Acerca de */
+.container-about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 50px 0;
+  border: 1px solid rgb(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.container-about .about {
+  width: 50%;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 20px;
+}
+
+.container-about .about-information {
+  width: 50%;
+  line-height: 1.9;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 20px;
+}
+
+.about-information table {
+  width: 100%;
+  margin-top: -20px;
+}
+
+.about-information table .label {
+  width: 40%;
+  font-weight: 700;
+}
+
+.about-information table .input {
+  width: 60%;
+}
+
+.subtitles {
+  font-weight: 700;
+  font-size: 25px;
+  text-align: left;
+}
+
+.titles {
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+}
+
+.titles-cv {
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+  /*margin-bottom: -25px;*/
+}
+
+.parrafos {
+  line-height: 1.7;
+}
+
+/* Contenedor Habilidades */
+.container-skill {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 25px 0;
+  border: 1px solid rgb(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.container-skill .skill-list {
+  width: 50%;
+  padding: 0 20px;
+}
+
+.skill-list > h3 {
+  margin-bottom: -20px;
+}
+
+/* Contenedor Educación y Experiencia laboral */
+.container-edu-work {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
+  border: 1px solid rgb(255, 255, 255, 0.2);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Fecha y nombre de la Empresa o Intitución */
+.container-edu-work .college {
+  width: 25%;
+  padding: 50px 0;
+  margin-bottom: 25px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: center;
+  background-color: #0267c1;
+  color: #fff;
+}
+
+.college .date {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.college > p {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.container-edu-work .detail {
+  width: 75%;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid rgb(0, 0, 0, 0.2);
+}
+
+.detail .detail-title {
+  font-size: 22px;
+  font-weight: inherit;
+  line-height: 10px;
+}
+
+.detail .detail-name {
+  font-size: 1em;
+  line-height: 10px;
+  text-transform: uppercase;
+  color: #9da3a4;
+}
+
+/* Nombre de la Empresa donde trabajo */
+.college .college-company {
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* Contacto */
+.contact {
+  background-color: #0267c1;
+  color: #fff;
+  margin: 0;
+}
+
+/* Contenedor Contacto y Redes sociales */
+.section-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  margin: 0;
+}
+
+/* Contenedor Contacto */
+.contact .container-contact {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.form-email input {
+  border-color: gray;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px 20px 10px 25px;
+}
+
+.form-email button {
+  background: #9da3a4;
+  color: #fff;
+  display: block;
+  padding: 10px 0;
+  border-color: gray;
+  border-style: solid;
+  border-radius: 5px;
+  width: 100px;
+  margin: 10px 1px;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.form-email button:hover {
+  background-color: #000;
+}
+
+/* Contenedor Redes sociales */
+.contact .container-networks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.social-link {
+  display: inline-block;
+  font-size: 50px;
+  /* width: 50px;
+    height: 50px; */
+  margin: 0 10px;
+  color: #fff;
+  /* background-size: 50px 50px; */
+}
+
+/* footer */
+footer {
+  background-color: #131316;
+  color: #fff;
+  margin: 0;
+}
+
+.container-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-footer p > a {
+  color: #fff;
+  text-decoration: none;
+}
