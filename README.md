@@ -1,5 +1,14 @@
 # Curriculum Vitae
 
-Este **curriculum** tiene como objetivo, _resaltar_ los aspectos más representativos de mis _competencias_ tanto a nivel personal, como a nivel profesional.
+Este **curriculum** tiene como objetivo, **resaltar** los aspectos más **representativos** de mis **competencias** tanto a **nivel personal**, como a **nivel profesional**.
 
-> Fabián Fería
+## Contenido del CV
+
+- About me
+- Skills
+- Educations
+- Work Experience
+
+## Screenshot del CV
+
+![Curriculum Vitae](img/Screenshot.png)
